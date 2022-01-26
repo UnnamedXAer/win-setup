@@ -15,6 +15,9 @@ choco install -y git vscode postman notepadplusplus advanced-ip-scanner
 # choco install -y golang
 choco install -y nodejs-lts 
 
+# refresh enviroment vars
+refreshenv
+
 # communicators
 choco install -y whatsapp signal;
 
@@ -29,6 +32,9 @@ choco install -y mpc-be aimp
 
 #others
 choco install -y google-drive-file-stream calibre
+
+# refresh enviroment vars
+refreshenv
 
 git config --global user.name "UnnamedXAer";
 git config user.email "UnnamedXAer.git@gmail.com";

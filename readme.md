@@ -8,7 +8,7 @@ This project contains [Chocolate](https://docs.chocolatey.org/en-us/) script tha
 > Open CMD as admin, than paste following (as one line).
 
 ```bat
-cd %USERPROFILE%\Downloads && echo "inside /Downloads" && curl https://codeload.github.com/UnnamedXAer/win-setup/zip/refs/heads/master --output win-setup.zip && echo "got archive" && powershell -command "Expand-Archive -Force 'win-setup.zip' '.'" && echo "unpacked" && cd win-setup-master && echo "starting installation scripts" && install.cmd && echo "installed" && echo "about to clean up" && cd .. && rmdir /Q /s win-setup-master & del /Q /s win-setup.zip & echo . & echo I'm done!
+cd %USERPROFILE%\Downloads && echo "inside /Downloads" && curl https://codeload.github.com/UnnamedXAer/win-setup/zip/refs/heads/master --output win-setup.zip && echo "got archive" && powershell -command "Expand-Archive -Force 'win-setup.zip' '.'" && echo "unpacked" && cd win-setup-master && echo "starting installation scripts" && install.cmd && echo "installed" && echo "about to clean up" && cd .. && rmdir /Q /s win-setup-master & del /Q /s win-setup.zip & refreshenv & echo . & echo I'm done!
 ```
 
 ## In steps
@@ -23,5 +23,6 @@ cd %USERPROFILE%\Downloads && echo "inside /Downloads" && curl https://codeload.
 8. clean up - move back from the repo folder `cd ..`
 9.  remove extracted folder `rmdir /Q /s win-setup-master`
 10. remove the zip file `del /Q /s win-setup.zip`
-11. done - do your stuff 🎉
+11. refresh environment vars `refreshenv`
+12. done - do your stuff 🎉
 
