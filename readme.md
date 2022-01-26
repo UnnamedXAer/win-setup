@@ -1,7 +1,7 @@
 
 # Install common apps via Chocolate on clean windows machine.
 
-This project contains [Chocolate](https://link) script that will automatically install commonly used apps (*by me at least*).
+This project contains [Chocolate](https://docs.chocolatey.org/en-us/) script that will automatically install commonly used apps (*by me at least*).
 
 ## One-liner
 
