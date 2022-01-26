@@ -1,5 +1,3 @@
-@echo off
-
 SET DIR=%~dp0%
 
 ::download install.ps1
