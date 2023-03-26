@@ -26,3 +26,17 @@ cd %USERPROFILE%\Downloads && echo "inside /Downloads" && curl https://codeload.
 11. refresh environment vars `refreshenv`
 12. done - do your stuff 🎉
 
+-----------------------------
+Todo:
+ - instal oh-my-posh
+ - set oh-my-posh theme: 
+  Terminal: `code $PROFILE`,  
+  ```powershell
+  # Import-Module posh-git
+  # Import-Module oh-my-posh
+  # Set-PoshPrompt Operator
+  # Set-PoshPrompt -Theme paradox
+  # Set-PoshPrompt -Theme the-unnamed
+  # Set-PoshPrompt -Theme Operator
+  oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\amro.omp.json" | Invoke-Expression
+  ```
